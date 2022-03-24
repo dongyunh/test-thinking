@@ -28,7 +28,7 @@ const ChattingRoom = ({ chatHistory, myNickname, onClick }: ChattingRoomType) =>
           <CloseIcon style={{ color: 'white' }} />
         </IconBox>
       </ChattingHeader>
-      <MessageBox>
+      {/* <MessageBox>
         {chatHistory?.map((data, idx) => {
           return (
             <Message
@@ -39,7 +39,7 @@ const ChattingRoom = ({ chatHistory, myNickname, onClick }: ChattingRoomType) =>
             />
           );
         })}
-      </MessageBox>
+      </MessageBox> */}
       <ChatTextField />
     </Container>
   );
