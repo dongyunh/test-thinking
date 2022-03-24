@@ -41,4 +41,10 @@ const StlyeSubject = styled.h3`
   text-align: center;
 `;
 
+// const StyleIdea= styled.div`
+// width:
+// height:
+// background-color
+// `
+
 export { BwCard };
