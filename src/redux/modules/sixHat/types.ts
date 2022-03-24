@@ -11,9 +11,9 @@ export type UserData = {
   hat: string | null;
 };
 
-export type UserList = UserData[];
+export type UserList = UserData;
 
-export type ChatHistoryType = ChatData[];
+export type ChatHistoryType = ChatData;
 
 export type SixHatState = {
   currentPage: number;
