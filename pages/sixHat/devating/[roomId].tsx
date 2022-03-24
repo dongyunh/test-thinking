@@ -97,12 +97,12 @@ const SettingPage = ({ roomId }: SettingPageProps) => {
         />
       ),
     },
-    {
-      component: <SelectHat onClick={sendHatData} onClickComplete={() => handleNextPage(2)} />,
-    },
-    {
-      component: <DevatingRoom />,
-    },
+    // {
+    //   component: <SelectHat onClick={sendHatData} onClickComplete={() => handleNextPage(2)} />,
+    // },
+    // {
+    //   component: <DevatingRoom />,
+    // },
   ];
 
   const contextValue = {
