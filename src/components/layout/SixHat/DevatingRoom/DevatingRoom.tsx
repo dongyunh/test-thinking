@@ -16,7 +16,7 @@ type DevatingRoomProps = {
 const DevatingRoom = ({ chatHistory }: DevatingRoomProps) => {
   return (
     <CenterLayout>
-      <DevatingChatBox chatHistory={chatHistory} />
+      <DevatingChatBox />
     </CenterLayout>
   );
 };

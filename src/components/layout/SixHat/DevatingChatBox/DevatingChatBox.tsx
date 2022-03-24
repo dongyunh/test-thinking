@@ -15,9 +15,9 @@ type StyleProps = {
 
 const DevatingChatBox = ({}) => {
   const { subject, chatHistory, nickname, userList } = useAppSelector(sixHatSelector);
-  const myHat = userList?.filter(user => {
-    if (user.nickname == nickname) return user.hat;
-  });
+  // const myHat = userList?.filter(user => {
+  //   if (user.nickname == nickname) return user.hat;
+  // });
 
   return (
     <Container>
@@ -28,14 +28,14 @@ const DevatingChatBox = ({}) => {
             <HatImg width={70} />
           </MyHatBox>
           <UserList>
-            {chatHistory?.map(data => {
+            {/* {chatHistory?.map(data => {
               return <User key={data.nickname}>{data.nickname}</User>;
-            })}
+            })} */}
           </UserList>
         </UserListBox>
         <ChatViewBox>
           <MessageBox>
-            {chatHistory?.map(data => {
+            {/* {chatHistory?.map(data => {
               return (
                 <Message
                   key={data.nickname}
@@ -45,7 +45,7 @@ const DevatingChatBox = ({}) => {
                   hat={data.hat}
                 />
               );
-            })}
+            })} */}
           </MessageBox>
           <ChatTextField />
         </ChatViewBox>
