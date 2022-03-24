@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext } from 'react';
 import { useRouter } from 'next/router';
 import { GetServerSideProps } from 'next';
 import { InteractivePage, WaitingRoom } from '../../../src/components/common';
-import { SelectHat, DevatingRoom } from '../../../src/components/layout/SixHat';
+import { DevatingRoom } from '../../../src/components/layout/SixHat';
 import { useAppDispatch, useAppSelector } from '../../../src/redux/hooks';
 import {
   updateCurrentPage,
@@ -101,8 +101,8 @@ const SettingPage = ({ roomId }: SettingPageProps) => {
       component: <SelectHat onClick={sendHatData} onClickComplete={() => handleNextPage(2)} />,
     },
     {
-      component: <DevatingRoom />
-    }
+      component: <DevatingRoom />,
+    },
   ];
 
   const contextValue = {
