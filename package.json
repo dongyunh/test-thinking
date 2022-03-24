@@ -38,6 +38,7 @@
     "redux-thunk": "^2.4.1",
     "sockjs-client": "^1.6.0",
     "stompjs": "^2.3.3",
+    "storybook": "^6.4.19",
     "styled-components": "^5.3.3",
     "typesafe-actions": "^5.1.0",
     "v8n": "^1.4.0"
