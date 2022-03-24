@@ -9,7 +9,7 @@ import { themedPalette } from '../../../../theme';
 type MakeRoomModalProps = {
   onClickDropdown1?: () => void;
   onClickDropdown2?: () => void;
-  onClickButton: (title: string | null, number: number, time: number) => void;
+  onClickButton: (title: string, number: number, time: number) => void;
 };
 
 const MakeRoomModal = ({
