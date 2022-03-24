@@ -17,7 +17,7 @@ const MakeRoomModal = ({
   onClickDropdown2,
   onClickButton,
 }: MakeRoomModalProps) => {
-  const [title, setTitle] = useState<string | null>(null);
+  const [title, setTitle] = useState<string>('test');
   const [number, setNumber] = useState<number>(1);
   const [timer, setTimer] = useState<number>(1);
   const [isError, setIsError] = useState<boolean>();
@@ -31,7 +31,7 @@ const MakeRoomModal = ({
     setDisabled(!validation.test(_title));
   };
 
-  const handleOnClickButton = (_title: string | null, _number: number, _time: number) => {
+  const handleOnClickButton = (_title: string, _number: number, _time: number) => {
     if (!onClickButton) return;
     onClickButton(_title, _number, _time);
   };
