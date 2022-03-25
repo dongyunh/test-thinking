@@ -14,7 +14,7 @@ export const selectWord = createAction<SelectWordPayload>(`${prefix}/SELECT_WORD
 export const getSubject = createAction<string>(`${prefix}/GET_SUBJECT`);
 
 export const getRandomWord = createAsyncThunk(`${prefix}/GET_RANDOM_WORD`, async () => {
-  const response = await axios.get('http://3.38.151.99/randomword');
+  const response = await axios.get('http://13.125.231.85/randomword');
   return response.data;
 });
 
@@ -23,7 +23,7 @@ export const postPickedWords = createAsyncThunk(
   async (arg, { getState }) => {
     const { randomWord } = getState() as RootState;
     const { pickedWordList } = randomWord;
-    const response = await axios.post('http://3.38.151.99/randomword', {
+    const response = await axios.post('http://13.125.231.85/randomword', {
       wordList: pickedWordList,
     });
 
