@@ -5,4 +5,4 @@ const ResultPage = () => {
   return <Result />;
 };
 
-export { ResultPage };
+export default ResultPage;
