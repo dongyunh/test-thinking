@@ -55,7 +55,7 @@ const SettingPage = ({ roomId }: SettingPageProps) => {
 
   useEffect(() => {
     if (nickname) {
-      ConnectedSocket = new HandleSocket('https://13.125.231.85/websocket');
+      ConnectedSocket = new HandleSocket('https://thinkboom.shop/websocket');
       ConnectedSocket.connectSH(senderId, roomId);
     }
   }, [nickname]);
@@ -79,7 +79,7 @@ const SettingPage = ({ roomId }: SettingPageProps) => {
 
   const handleUpdateNickname = async (enteredName: string) => {
     await axios
-      .post(`https://13.125.231.85/api/brainwriting/user/nickname/${roomId}`, {
+      .post(`https://thinkboom.shop/api/brainwriting/user/nickname/${roomId}`, {
         // bwRoomid: roomId,
         nickname: enteredName,
       })
