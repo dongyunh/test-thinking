@@ -29,7 +29,7 @@ const BrainWriting = () => {
   // TODO : 서버 주소 나오면 api 한곳에 모으기, 비동기 작업들 리덕스로 옮기기
   const handleMakeNewPage = async (title: string, headCount: number, time: number) => {
     await axios
-      .post(`https://13.125.231.85/api/brainwriting/rooms`, { title, headCount, time })
+      .post(`https://thinkboom.shop/api/brainwriting/rooms`, { title, headCount, time })
       .then(res => {
         console.log(res);
         const { roomId } = res.data;
