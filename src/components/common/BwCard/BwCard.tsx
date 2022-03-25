@@ -17,7 +17,7 @@ const BwCard = ({ width, height, subject }: CardProps) => {
     <CardWrapper>
       <StyledCard width={width} height={height}>
         <StlyeSubject>{subject}</StlyeSubject>
-        <StyledIdea>dsd</StyledIdea>
+        <StyledIdea>sss</StyledIdea>
         <StyledButton>작성</StyledButton>
       </StyledCard>
     </CardWrapper>
@@ -44,7 +44,7 @@ const StlyeSubject = styled.h3`
   font-size: 28px;
 `;
 
-const StyledIdea = styled.div<StyleProps>`
+const StyledIdea = styled.div`
   height: 60%;
   width: 82%;
   border: 5px solid ${themedPalette.border_1};
@@ -54,7 +54,7 @@ const StyledIdea = styled.div<StyleProps>`
   margin: auto;
 `;
 
-const StyledButton = styled.button<StyleProps>`
+const StyledButton = styled.button`
   height: 12%;
   width: 82%;
   border: 5px solid ${themedPalette.border_1};
