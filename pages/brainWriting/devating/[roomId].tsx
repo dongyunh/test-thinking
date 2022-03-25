@@ -55,7 +55,7 @@ const SettingPage = ({ roomId }: SettingPageProps) => {
 
   useEffect(() => {
     if (nickname) {
-      ConnectedSocket = new HandleSocket('http://13.125.59.252/websocket');
+      ConnectedSocket = new HandleSocket('http://13.125.231.85/websocket');
       ConnectedSocket.connectSH(senderId, roomId);
     }
   }, [nickname]);
@@ -79,7 +79,7 @@ const SettingPage = ({ roomId }: SettingPageProps) => {
 
   const handleUpdateNickname = async (enteredName: string) => {
     await axios
-      .post(`http://52.78.192.124/api/brainwriting/user/nickname/${roomId}`, {
+      .post(`http://13.125.231.85/api/brainwriting/user/nickname/${roomId}`, {
         // bwRoomid: roomId,
         nickname: enteredName,
       })
